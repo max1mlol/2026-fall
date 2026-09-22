@@ -5,4 +5,7 @@ export class Display {
     showHumidity(value: number): void {
         console.log("Humidity: " + value + "%");
     }
+    showAirQuality(value: number): void {
+        console.log("Air Quality Index: " + value);
+    }
 }
