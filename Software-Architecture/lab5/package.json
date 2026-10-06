@@ -1,0 +1,14 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "scripts": {
+    "task1": "tsx src/task1/index.ts",
+    "task2": "tsx src/task2/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.0.0"
+  }
+}
