@@ -10,14 +10,14 @@ export class TrainTrip extends Trip {
     }
 
     book(): void {
-        console.log(`[Галт тэрэг] ${this.trainNumber} дугаартай галт тэрэгний захиалга хийгдлээ.`);
+        console.log(`[Galt tereg] ${this.trainNumber} dugaartai galt teregnii zahialga khiigdlee.`);
     }
 
     cancel(): void {
-        console.log(`[Галт тэрэг] ${this.trainNumber} дугаартай галт тэрэгний захиалга цуцлагдлаа.`);
+        console.log(`[Galt tereg] ${this.trainNumber} dugaartai galt teregnii zahialga tsutslagdlaa.`);
     }
 
     getDetails(): string {
-        return `${this.getSummary()}, Галт тэрэгний дугаар: ${this.trainNumber}`;
+        return `${this.getSummary()}, Galt teregnii dugaar: ${this.trainNumber}`;
     }
 }

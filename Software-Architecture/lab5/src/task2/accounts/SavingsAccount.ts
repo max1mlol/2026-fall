@@ -9,21 +9,21 @@ export class SavingsAccount extends Account {
 
     withdraw(amount: number): void {
         if (amount <= 0) {
-            console.log("Зарлагадах дүн 0-ээс их байх ёстой.");
+            console.log("Zarlagadakh dun 0-s ikh baikh ystoi.");
             return;
         }
 
         if (this.balance - amount < this.MIN_BALANCE) {
-            console.log(`[Алдаа] ${this.accountNumber}: Дансанд хамгийн багадаа ${this.MIN_BALANCE}₮ үлдэх ёстой! (Одоогийн үлдэгдэл: ${this.balance}₮)`);
+            console.log(`[Алдаа] ${this.accountNumber}: Dansand khamgiin bagadaa  ${this.MIN_BALANCE}₮ uldekh ystoi! (Odoogiin uldegdel: ${this.balance}₮)`);
         } else {
             this.balance -= amount;
-            console.log(`[${this.accountNumber}] ${amount}₮ зарлагадлаа. Үлдсэн: ${this.balance}₮`);
+            console.log(`[${this.accountNumber}] ${amount}₮ zarlagadlaa. Uldegdel: ${this.balance}₮`);
         }
     }
 
     calculateInterest(rate: number): number {
         const interest = (this.balance * rate) / 100;
-        console.log(`[${this.accountNumber}] Жилийн хүү (${rate}%): ${interest}₮`);
+        console.log(`[${this.accountNumber}] Jiliin khuu (${rate}%): ${interest}₮`);
         return interest;
     }
 }

@@ -10,14 +10,14 @@ export class HikingTrip extends Trip {
     }
 
     book(): void {
-        console.log(`[Явган аялал] Хөтөч ${this.guideName}-тэй ${this.destination} аялал захиалагдлаа.`);
+        console.log(`[Yvgan aylal] Khutuch ${this.guideName}-tei ${this.destination} aylal zahialagdlaa.`);
     }
 
     cancel(): void {
-        console.log(`[Явган аялал] ${this.destination} аяллын захиалга цуцлагдлаа.`);
+        console.log(`[Yvgan aylal] ${this.destination} aylaliin zahialga tsutslagdlaa.`);
     }
 
     getDetails(): string {
-        return `${this.getSummary()}, Аяллын хөтөч: ${this.guideName}`;
+        return `${this.getSummary()}, Aylaliin khutuch: ${this.guideName}`;
     }
 }

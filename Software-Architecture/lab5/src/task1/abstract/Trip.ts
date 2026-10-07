@@ -6,12 +6,10 @@ export abstract class Trip implements Bookable {
         public price: number
     ) {}
 
-    // Common method
     getSummary(): string {
-        return `Очих газар: ${this.destination}, Үнэ: $${this.price}`;
+        return `Ochih gazar: ${this.destination}, Une: $${this.price}`;
     }
 
-    // Abstract methods
     abstract book(): void;
     abstract cancel(): void;
     abstract getDetails(): string;

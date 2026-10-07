@@ -10,14 +10,14 @@ export class FlightTrip extends Trip {
     }
 
     book(): void {
-        console.log(`[Нислэг] ${this.airline} компанийн ${this.destination} чиглэлийн аялал захиалагдлаа.`);
+        console.log(`[Nisleg] ${this.airline} company-n ${this.destination} chigleliin aylal zahialagdlaa.`);
     }
 
     cancel(): void {
-        console.log(`[Нислэг] ${this.airline} компанийн ${this.destination} чиглэлийн захиалга цуцлагдлаа.`);
+        console.log(`[Nisleg] ${this.airline} company-n ${this.destination} chigleliin zahialga tsutslagdlaa.`);
     }
 
     getDetails(): string {
-        return `${this.getSummary()}, Нисэх компани: ${this.airline}`;
+        return `${this.getSummary()}, Niseh company: ${this.airline}`;
     }
 }

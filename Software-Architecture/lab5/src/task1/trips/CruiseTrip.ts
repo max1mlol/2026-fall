@@ -10,14 +10,14 @@ export class CruiseTrip extends Trip {
     }
 
     book(): void {
-        console.log(`[Далайн аялал] ${this.shipName} хөлөг онгоцоор ${this.destination} хүрэх аялал захиалагдлаа.`);
+        console.log(`[Dalain Aylal] ${this.shipName} hulug ongotsoor ${this.destination} hureh aylal zahialagdlaa.`);
     }
 
     cancel(): void {
-        console.log(`[Далайн аялал] ${this.shipName} хөлөг онгоцны захиалга цуцлагдлаа.`);
+        console.log(`[Dalain aylal] ${this.shipName} hulug ongotsnii zahialga tsutslagdlaa.`);
     }
 
     getDetails(): string {
-        return `${this.getSummary()}, Хөлөг онгоц: ${this.shipName}`;
+        return `${this.getSummary()}, Hulug ongots: ${this.shipName}`;
     }
 }

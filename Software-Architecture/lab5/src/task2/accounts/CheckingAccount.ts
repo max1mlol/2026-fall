@@ -12,21 +12,21 @@ export class CheckingAccount extends Account {
 
     withdraw(amount: number): void {
         if (amount <= 0) {
-            console.log("Зарлагадах дүн 0-ээс их байх ёстой.");
+            console.log("Zarlagadakh dun 0-s ikh baikh ystoi.");
             return;
         }
 
         const maxLimit = this.balance + this.overdraftLimit;
 
         if (amount > maxLimit) {
-            console.log(`[Алдаа] ${this.accountNumber}: Зээлийн хязгаарт хүрэхгүй байна. Боломжит дээд дүн: ${maxLimit}₮`);
+            console.log(`[Aldaa] ${this.accountNumber}: Zeeliin hyzgaar hurehgui baina. Bolomjit deed dun: ${maxLimit}₮`);
         } else {
             this.balance -= amount;
-            console.log(`[${this.accountNumber}] ${amount}₮ зарлагадлаа. Шинэ үлдэгдэл: ${this.balance}₮`);
+            console.log(`[${this.accountNumber}] ${amount}₮ zarlagadlaa. Shine uldegdel: ${this.balance}₮`);
         }
     }
 
     checkOverdraftLimit(): void {
-        console.log(`[${this.accountNumber}] Зээлийн хязгаар (Overdraft Limit): ${this.overdraftLimit}₮`);
+        console.log(`[${this.accountNumber}] Zeeliin hyzgaar: ${this.overdraftLimit}₮`);
     }
 }
