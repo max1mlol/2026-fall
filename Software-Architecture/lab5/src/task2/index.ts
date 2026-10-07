@@ -30,9 +30,9 @@ checking.withdraw(2000);
 checking.withdraw(5000);
 console.log();
 
-console.log("--- 5. Жилийн хүү тооцох ---");
+console.log("--- 5. Jiliin khuu tootsokh ---");
 savings.calculateInterest(8);
 console.log();
 
-console.log("--- 6. Зээлийн хязгаар шалгах ---");
+console.log("--- 6. Zeeliin hyzgaar shalgakh ---");
 checking.checkOverdraftLimit();
