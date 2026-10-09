@@ -73,7 +73,7 @@ int main() {
     struct PCB p3 = {3, 3, 0, 0};
 
     int choice;
-    int max_steps = 5; // Fixed number of execution steps per process
+    int max_steps = 5;
 
     printf("=========================================\n");
     printf("  Process Control Block (PCB) Simulation  \n");
