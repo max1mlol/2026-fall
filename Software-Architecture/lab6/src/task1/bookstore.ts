@@ -10,13 +10,13 @@ export class BookStore {
 
     addBook(book: Book): void {
         this.books.push(book);
-        console.log(`Нэмэгдсэн ном: "${book.title}" (${book.author.name})`);
+        console.log(`Nemegdsen nom: "${book.title}" (${book.author.name})`);
     }
 
     listBooks(): void {
-        console.log(`\n--- ${this.name} дэлгүүрийн номын жагсаалт ---`);
+        console.log(`\n--- ${this.name} delguuriin nomiin jagsaalt ---`);
         this.books.forEach((book, index) => {
-            console.log(`${index + 1}. ${book.title} - Зохиолч: ${book.author.name} - Үнэ: ${book.price}₮`);
+            console.log(`${index + 1}. ${book.title} - Zohiolch: ${book.author.name} - Une: ${book.price}₮`);
         });
     }
 }
