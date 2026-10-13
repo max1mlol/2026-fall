@@ -6,16 +6,16 @@ import { FoodItem } from './task2/foodItem';
 import { Restaurant } from './task2/restaurant';
 import { Customer } from './task2/customer';
 
-// --- ДААЛГАВАР 1: Туршилт ---
-console.log("=== ДААЛГАВАР 1: НОМЫН ДЭЛГҮҮРИЙН СИСТЕМ ===");
-const author1 = new Author("Ц.Дамдинсүрэн");
-const book1 = new Book("Гол дүрийн тууж", 25000, author1);
+// --- DAALGAVAR 1: Nomnii Delguuriin Sistem ---
+console.log("=== DAALGAVAR 1: NOMIIN DELGUURIIN SYSTEM ===");
+const author1 = new Author("Ts. Damdinsuren");
+const book1 = new Book("Gol duriin tuuj", 25000, author1);
 
-const store = new BookStore("Интерном");
+const store = new BookStore("Internom");
 store.addBook(book1);
 store.listBooks();
 
-// --- ДААЛГАВАР 2: Туршилт ---
+// --- DAALGAVAR 2: Restoranii Zahialgiin Sistem ---
 console.log("\n=== DAALGAVAR 2: RESTAURANT ZAHIALGIIN SYSTEM ===");
 const restaurant = new Restaurant("Khan Buuz");
 const food1 = new FoodItem("Khuushur", 4000);
