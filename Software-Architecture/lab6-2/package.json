@@ -1,0 +1,16 @@
+{
+  "name": "lab6-2",
+  "version": "1.0.0",
+  "description": "Smart Building Security System - Lab 6 Homework",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
